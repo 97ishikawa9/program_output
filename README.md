@@ -1,8 +1,12 @@
-# README
+# テーブル設計
 
-## Tabel名
+## programsテーブル
 
-|Column|Type|Options|
-|------|----|-------|
+| Column  | Type   | Options     |
+|---------|--------|------------ |
+| date    | string | null: false |
+| title   | string | null: false |
+| fact    |        | null: false |
+| feeling |        | null: false |
 
 ### Association
