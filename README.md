@@ -6,8 +6,8 @@
 |---------|--------|------------ |
 | date    | string | null: false |
 | title   | string | null: false |
-| fact    |        | null: false |
-| feeling |        | null: false |
+| fact    | text   | null: false |
+| feeling | text   | null: false |
 
 ### Association
 
