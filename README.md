@@ -16,9 +16,9 @@
 
 ## tags テーブル
 
-| Column | Type   | Options     |
-| ------ | ------ | ----------- |
-| name   | string | null: false |
+| Column | Type   | Options                        |
+| ------ | ------ | ------------------------------ |
+| name   | string | null: false , uniqueness: true |
 
 ### Association
 
