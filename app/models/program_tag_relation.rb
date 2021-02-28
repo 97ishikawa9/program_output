@@ -15,7 +15,7 @@ class ProgramTagRelation
     program = Program.create()
     tag = Tag.create(name: name)
 
-    TweetTag.create(program_id: program.id: tag_id: tag.id)
+    ProgramTag.create(program_id: program.id, tag_id: tag.id)
   end
 
 end
