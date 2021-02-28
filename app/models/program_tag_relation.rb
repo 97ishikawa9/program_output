@@ -1,11 +1,14 @@
 class ProgramTagRelation
 
   include ActibeModel::ActibeModel
-  attr_accessor :
+  attr_accessor :date, :title, :fact, :feeling, :name
 
   with_options presence: true do
-    validates :
-    validates :
+    validates :date
+    validates :title
+    validates :fact
+    validates :feeling
+    validates :name
   end
 
   def sava
@@ -14,5 +17,5 @@ class ProgramTagRelation
 
     TweetTag.create(program_id: program.id: tag_id: tag.id)
   end
-  
+
 end
