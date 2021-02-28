@@ -12,8 +12,9 @@ class ProgramTagRelation
   end
 
   def sava
-    program = Program.create()
-    tag = Tag.create(name: name)
+    program = Program.create(date: date, title: title, fact: fact, feeling: feeling)
+    tag = Tag.where(name: name).first_or_initialize
+    tag.save
 
     ProgramTag.create(program_id: program.id, tag_id: tag.id)
   end
