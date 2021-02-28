@@ -1,5 +1,8 @@
 <%= form_with model: @program, url: programs_path, class:'form-wrap', local: true do |f| %>
+
+
   <div class='program-form'>
+
     <div class="date-field">
       <%= f.label :date, "放送日時" %>
       <%= f.text_field :date, class:"input-date" %>
@@ -16,14 +19,19 @@
       <%= f.label :feeling, "感想" %>
       <%= f.text_area :feeling, class:"input-feeling"%>
     </div>
+
     <div class="tag-field", id='tag-field'>
       <%= f.label :name, "タグ" %>
       <%= f.text_field :name, class:"input-tag" %>
     </div>
     <div id="search-result">
     </div>
+
   </div>
+
   <div class="submit-post">
     <%= f.submit "Send", class: "submit-btn" %>
   </div>
+
+
 <% end %>
