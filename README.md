@@ -1,24 +1,38 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## programsテーブル
 
-Things you may want to cover:
+| Column  | Type   | Options     |
+|---------|--------|------------ |
+| date    | string | null: false |
+| title   | string | null: false |
+| fact    | text   | null: false |
+| feeling | text   | null: false |
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many :program_tags
+- has_many :tags, through: program_tags
 
-* Configuration
+## tags テーブル
 
-* Database creation
+| Column | Type   | Options                        |
+| ------ | ------ | ------------------------------ |
+| name   | string | null: false , uniqueness: true |
 
-* Database initialization
+### Association
 
-* How to run the test suite
+- has_many :program_tags
+- has_many :programs, through: program_tags
 
-* Services (job queues, cache servers, search engines, etc.)
+## program_tags テーブル
 
-* Deployment instructions
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| program | references | null: false, foreign_key: true |
+| tag     | references | null: false, foreign_key: true |
 
-* ...
+### Association
+
+- belongs_to :program
+- belongs_to :tag
