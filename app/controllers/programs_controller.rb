@@ -5,7 +5,22 @@ class ProgramsController < ApplicationController
   end
 
   def new
-    @program = ProgramsTagRelation.new
+    @program = ProgramTagRelation.new
   end
-  
+
+  def create
+    @program = ProgramTagRelation.new(program_params)
+    if @program.valid?
+      @program.save
+      return redirect_to root_path
+    else
+      render "new"
+    end
+  end
+
+  private
+
+  def program_params
+    params.require(:program_tag_relation).permit(:date, :title, :fact, :feeling, :name)
+
 end
