@@ -1,0 +1,32 @@
+<div class="header">
+  <div class="innner-header">
+    <h1 class="title">
+      番組文字起こし
+    </h1>
+    <li class='new-post'>
+      <%= link_to "New Post", new_program_path, class:"post-btn" %>
+    </li>
+  </div>
+</div>
+
+<div class="main">
+  <div class="program-wrap">
+    <% @programs.each do |program|%>
+      <div class="program_title">
+        <p class="text">
+          <%= program.title %>
+          <%= program.date %>
+          <%= program.fact %>
+          <%= program.feeling %>
+        </p>
+        <ul class="tag">
+          <li class="tag-list">
+            <% program.tags.each do |tag| %>
+              #<%= tag.name %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    <% end %>
+  </div>
+</div>
