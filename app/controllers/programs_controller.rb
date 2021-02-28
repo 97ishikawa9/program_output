@@ -22,5 +22,5 @@ class ProgramsController < ApplicationController
 
   def program_params
     params.require(:program_tag_relation).permit(:date, :title, :fact, :feeling, :name)
-
+  end
 end
