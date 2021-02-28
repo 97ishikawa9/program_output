@@ -1,6 +1,6 @@
 class ProgramTagRelation
 
-  include ActibeModel::ActibeModel
+  include ActiveModel::Model
   attr_accessor :date, :title, :fact, :feeling, :name
 
   with_options presence: true do
