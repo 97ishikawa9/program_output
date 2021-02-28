@@ -1,4 +1,4 @@
-class ProgramTagRelation
+class ProgramsTagRelation
 
   include ActiveModel::Model
   attr_accessor :date, :title, :fact, :feeling, :name
