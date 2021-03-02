@@ -66,3 +66,11 @@
   display: flex;
   align-items: center;
 }
+
+.fact{
+  padding-bottom: 3px;
+}
+
+.feeling{
+  padding-bottom: 3px;
+}
