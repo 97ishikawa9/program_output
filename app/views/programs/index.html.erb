@@ -13,23 +13,24 @@
   <div class="program-wrap">
     <% @programs.each do |program|%>
       <div class="program_title">
-        <h2 class="text">
-          <%= program.title %>
-        <p class="date">
-          <%= program.date %>
-        <a class="fact">
-          <%= program.fact %>
-        <a class=feeling>
-          <%= program.feeling %>
-        </p>
-        <ul class="tag">
-          <li class="tag-list">
-            <% program.tags.each do |tag| %>
-              #<%= tag.name %>
-            <% end %>
-          </li>
-        </ul>
+        <%= program.title %>
       </div>
+      <div class="date">
+        <%= program.date %>
+      </div>
+      <div class="fact">
+        <%= program.fact %>
+      </div>
+      <div class=feeling>
+        <%= program.feeling %>
+      </div>
+      <ul class="tag">
+        <li class="tag-list">
+          <% program.tags.each do |tag| %>
+            #<%= tag.name %>
+          <% end %>
+        </li>
+      </ul>
     <% end %>
   </div>
 </div>
