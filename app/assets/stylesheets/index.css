@@ -67,12 +67,9 @@
   align-items: center;
 }
 
-.fact{
+.fact-feeling{
   padding-bottom: 10px;
-}
-
-.feeling{
-  padding-bottom: 10px;
+  font-weight: bold;
 }
 
 .tag{
