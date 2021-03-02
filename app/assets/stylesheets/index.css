@@ -9,3 +9,11 @@
   display: flex;
   justify-content: center;
 }
+
+.inner-header{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
