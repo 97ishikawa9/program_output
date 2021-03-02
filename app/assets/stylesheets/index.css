@@ -30,3 +30,10 @@
   margin-left: 50px;
   text-align: center;
 }
+
+.post-btn{
+  color: rgb(8, 243, 27);
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
