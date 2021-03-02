@@ -68,9 +68,20 @@
 }
 
 .fact{
-  padding-bottom: 3px;
+  padding-bottom: 10px;
 }
 
 .feeling{
-  padding-bottom: 3px;
+  padding-bottom: 10px;
+}
+
+.tag{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.tag-list{
+  margin-bottom: 10px;
 }
