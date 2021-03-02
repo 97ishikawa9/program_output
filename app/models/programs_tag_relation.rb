@@ -11,7 +11,7 @@ class ProgramsTagRelation
     validates :name
   end
 
-  def sava
+  def save
     program = Program.create(date: date, title: title, fact: fact, feeling: feeling)
     tag = Tag.where(name: name).first_or_initialize
     tag.save
