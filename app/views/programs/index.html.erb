@@ -12,11 +12,13 @@
 <div class="main">
   <div class="program-wrap">
     <% @programs.each do |program|%>
-      <div class="program_title">
-        <%= program.title %>
+      <div class="p-title">
+        <h1 class="program-title">
+          <%= program.title %>
       </div>
       <div class="date">
-        <%= program.date %>
+        <h2 class="broadcast-date">
+          <%= program.date %>
       </div>
       <div class="fact">
         <%= program.fact %>
