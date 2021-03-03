@@ -15,20 +15,22 @@
       <div class="p-title">
         <h1 class="program-title">
           <%= program.title %>
-      </div>
+      <%# </div>
       <div class="date">
-        <h2 class="broadcast-date">
-          <%= program.date %>
+        <h2 class="broadcast-date"> %>
+          (<%= program.date %>)
       </div>
       <div class="fact-feeling">
-        【番組内容】
-        <div>
+        <h3>【番組内容】
+      </div>
+      <div>
         <%= program.fact %>
-        </div>
-        【感想】
-        <div>
+      </div>
+      <div class="fact-feeling">
+        <h3>【感想】
+      </div>
+      <div>
         <%= program.feeling %>
-        </div>
       </div>
       <ul class="tag">
         <li class="tag-list">
