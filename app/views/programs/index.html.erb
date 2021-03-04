@@ -1,10 +1,10 @@
 <div class="header">
   <div class="inner-header">
     <h1 class="title">
-      番組文字起こし
+      俺、何観たんだっけ？
     </h1>
     <li class='new-post'>
-      <%= link_to "文字におこす", new_program_path, class:"post-btn" %>
+      <%= link_to "新しい番組", new_program_path, class:"post-btn" %>
     </li>
   </div>
 </div>
@@ -12,21 +12,33 @@
 <div class="main">
   <div class="program-wrap">
     <% @programs.each do |program|%>
-      <div class="program_title">
-        <p class="text">
+      <div class="p-title">
+        <h1 class="program-title">
           <%= program.title %>
-          <%= program.date %>
-          <%= program.fact %>
-          <%= program.feeling %>
-        </p>
-        <ul class="tag">
-          <li class="tag-list">
-            <% program.tags.each do |tag| %>
-              #<%= tag.name %>
-            <% end %>
-          </li>
-        </ul>
+      <%# </div>
+      <div class="date">
+        <h2 class="broadcast-date"> %>
+          (<%= program.date %>)
       </div>
+      <div class="fact-feeling">
+        <h3>【番組内容】
+      </div>
+      <div>
+        <%= program.fact %>
+      </div>
+      <div class="fact-feeling">
+        <h3>【感想】
+      </div>
+      <div>
+        <%= program.feeling %>
+      </div>
+      <ul class="tag">
+        <li class="tag-list">
+          <% program.tags.each do |tag| %>
+            #<%= tag.name %>
+          <% end %>
+        </li>
+      </ul>
     <% end %>
   </div>
 </div>
