@@ -1,9 +1,18 @@
 .form-wrap{
   height: 100vh;
   width: 100vw;
-  background-color: #c3db6c;
+  background-color: #def700;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.program-form{
+  width: 30%;
+  background-color: #e8f386;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border: 5px solid yellow;
 }
