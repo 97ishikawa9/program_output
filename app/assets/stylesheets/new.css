@@ -9,10 +9,10 @@
 }
 
 .program-form{
-  width: 30%;
+  width: 29%;
   background-color: #e8f386;
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
-  border: 5px solid yellow;
+  border: 30px solid yellow;
 }
