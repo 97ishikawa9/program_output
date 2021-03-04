@@ -18,8 +18,13 @@ class ProgramsController < ApplicationController
     end
   end
 
-  private
+  def search
+    return nil if params[:keyword] == ""
+    tag = Tag.where(['name LIKE ?', "%#{params[:keyword]}%"])
+    render json:{ keyword: tag }
+  end
 
+private
   def program_params
     params.require(:programs_tag_relation).permit(:date, :title, :fact, :feeling, :name)
   end
