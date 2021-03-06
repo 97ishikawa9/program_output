@@ -4,6 +4,7 @@ if (location.pathname.match("programs/new")){
     inputElement.addEventListener("keyup", () => {
       const keyword = document.getElementById("programs_tag_relation_name").value;
       const XHR = new XMLHttpRequest();
+      XHR.open("GET", `search/?keyword=${keyword}`, true);
     })
   });
 };
