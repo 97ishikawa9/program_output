@@ -3,7 +3,7 @@ if (location.pathname.match("programs/new")){
     const inputElement = document.getElementById("programs_tag_relation_name");
     inputElement.addEventListener("keyup", () => {
       const keyword = document.getElementById("programs_tag_relation_name").value;
-      console.log(keyword);
-    });
+      const XHR = new XMLHttpRequest();
+    })
   });
 };
