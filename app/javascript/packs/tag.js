@@ -5,6 +5,7 @@ if (location.pathname.match("programs/new")){
       const keyword = document.getElementById("programs_tag_relation_name").value;
       const XHR = new XMLHttpRequest();
       XHR.open("GET", `search/?keyword=${keyword}`, true);
+      XHR.responseType = "json";
     })
   });
 };
