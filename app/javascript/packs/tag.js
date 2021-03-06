@@ -6,6 +6,7 @@ if (location.pathname.match("programs/new")){
       const XHR = new XMLHttpRequest();
       XHR.open("GET", `search/?keyword=${keyword}`, true);
       XHR.responseType = "json";
+      XHR.send();
     })
   });
 };
