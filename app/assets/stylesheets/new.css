@@ -17,8 +17,15 @@
   border: 30px solid yellow;
 }
 
-.field{
+.tag-field{
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.field{
+  width: 50%;
   display: flex;
   flex-direction: column;
   margin: 15px;
