@@ -1,3 +1,11 @@
+.big_title{
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #111106;
+}
+
 .form-wrap{
   height: 100vh;
   width: 100vw;
@@ -9,7 +17,7 @@
 }
 
 .program-form{
-  width: 40%;
+  width: 30%;
   background-color: #e8f386;
   display: flex;
   flex-direction: column;
@@ -58,4 +66,7 @@
 
 .child{
   background-color: white;
+  border-bottom:yellow 5px solid;
+  margin:10px 0;
+  padding-left: 11px;
 }
