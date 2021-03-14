@@ -25,7 +25,6 @@
 }
 
 .tag-field{
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -63,7 +62,6 @@
 
 .child{
   background-color: white;
-  border-bottom:yellow 3px solid;
+  border:rgba(236, 236, 9, 0.822) 3px solid;
   margin:10px 0;
-  padding-left: 11px;
 }
