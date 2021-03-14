@@ -4,30 +4,27 @@
 
 
   <div class='program-form'>
-    <div class='field'>
-      <div class="date-field">
-        <%= f.label :date, "放送日時" %>
-        <%= f.text_field :date, class:"input-date" %>
-      </div>
-      <div class="title-field">
-        <%= f.label :title, "番組名" %>
-        <%= f.text_field :title, class:"input-title" %>
-      </div>
-      <div class="fact-field">
-        <%= f.label :fact, "番組内容" %>
-        <%= f.text_area :fact, class:"input-fact" %>
-      </div>
-      <div class="feeling-field">
-        <%= f.label :feeling, "感想" %>
-        <%= f.text_area :feeling, class:"input-feeling"%>
-      </div>
-
-      <div class="tag-field", id='tag-field'>
-        <%= f.label :name, "タグ" %>
-        <%= f.text_field :name, class:"input-tag" %>
-      </div>
-      <div id="search-result">
-      </div>
+    <div class="field">
+      <%= f.label :date, "放送日時" %>
+      <%= f.text_field :date, class:"input-form" %>
+    </div>
+    <div class="field">
+      <%= f.label :title, "番組名" %>
+      <%= f.text_field :title, class:"input-form" %>
+    </div>
+    <div class="field">
+      <%= f.label :fact, "番組内容" %>
+      <%= f.text_area :fact, class:"input-form" %>
+    </div>
+    <div class="field">
+      <%= f.label :feeling, "感想" %>
+      <%= f.text_area :feeling, class:"input-form"%>
+    </div>
+    <div class="field", id='tag-field'>
+      <%= f.label :name, "タグ" %>
+      <%= f.text_field :name, class:"input-form" %>
+    </div>
+    <div id="search-result">
     </div>
   </div>
 
