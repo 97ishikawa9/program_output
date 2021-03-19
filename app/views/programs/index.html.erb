@@ -13,7 +13,6 @@
   <div class="program-wrap">
     <% @programs.each do |program|%>
       <div class="more">
-        <span class="arrow"><%= image_tag 'yaji.png' %></span>
         <ul class="more_list">
           <li>
             <%= link_to '削除', program_path(program.id), method: :delete %>
