@@ -83,3 +83,7 @@
 .tag-list{
   margin-bottom: 10px;
 }
+
+.more_list{
+  list-style: none;
+}
