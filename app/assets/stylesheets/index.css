@@ -86,4 +86,6 @@
 
 .more_list{
   list-style: none;
+  display: flex;
+  justify-content: flex-end;
 }
