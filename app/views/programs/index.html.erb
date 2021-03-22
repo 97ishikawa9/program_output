@@ -14,10 +14,10 @@
     <% @programs.each do |program|%>
       <div class="more">
         <ul class="more_list">
-          <li>
+          <li class="action-btn">
             <%= link_to '編集', edit_program_path(program.id), method: :get %>
           </li>
-          <li>
+          <li class="action-btn">
             <%= link_to '削除', program_path(program.id), method: :delete %>
           </li>
         </ul>
