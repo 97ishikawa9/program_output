@@ -12,16 +12,6 @@
 <div class="main">
   <div class="program-wrap">
     <% @programs.each do |program|%>
-      <div class="more">
-        <ul class="more_list">
-          <li class="action-btn">
-            <%= link_to '編集', edit_program_path(program.id), method: :get %>
-          </li>
-          <li class="action-btn">
-            <%= link_to '削除', program_path(program.id), method: :delete %>
-          </li>
-        </ul>
-      </div>
       <div class="p-title">
         <h1 class="program-title">
           <%= program.title %>
