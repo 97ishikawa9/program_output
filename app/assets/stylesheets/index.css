@@ -86,11 +86,13 @@
 
 .bold{
   color: yellowgreen;
-  font-size: larger;
+  font-size: 40px;
+  margin: 5px;
 }
 
 .catch-copy{
   
   text-align: center;
   font-size: 20px;
+  background-color: rgb(243, 237, 201);
 }
