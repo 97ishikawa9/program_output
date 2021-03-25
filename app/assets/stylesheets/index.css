@@ -19,7 +19,7 @@
 }
 
 .title{
-  font-size: 50px;
+  font-size: 55px;
   font-weight: bold;
   color: white;
 }
@@ -93,7 +93,7 @@
 }
 
 .catch-copy{
-  
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
+  border: 7px solid yellow ;
 }
