@@ -1,7 +1,7 @@
 class ProgramsTagRelation
 
   include ActiveModel::Model
-  attr_accessor :date, :title, :fact, :feeling, :name
+  attr_accessor :date, :title, :summary, :fact, :feeling, :name
 
   with_options presence: true do
     validates :date
