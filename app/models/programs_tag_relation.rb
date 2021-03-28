@@ -12,7 +12,7 @@ class ProgramsTagRelation
   end
 
   def save
-    program = Program.create(date: date, title: title, fact: fact, feeling: feeling)
+    program = Program.create(date: date, title: title, summary: summary, fact: fact, feeling: feeling)
     tag = Tag.where(name: name).first_or_initialize
     tag.save
 
