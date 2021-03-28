@@ -6,6 +6,7 @@ class ProgramsTagRelation
   with_options presence: true do
     validates :date
     validates :title
+    validates :summary
     validates :fact
     validates :feeling
     validates :name
