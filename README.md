@@ -33,6 +33,7 @@
 | title   | string | null: false |
 | fact    | text   | null: false |
 | feeling | text   | null: false |
+| summary | string | null: false |
 
 ### Association
 
