@@ -24,6 +24,10 @@ class ProgramsController < ApplicationController
     render json:{ keyword: tag }
   end
 
+  def show
+    @program = Program.find(params[:id])
+  end
+
 private
   def program_params
     params.require(:programs_tag_relation).permit(:date, :title, :summary, :fact, :feeling, :name)
