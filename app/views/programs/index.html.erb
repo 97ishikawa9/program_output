@@ -27,7 +27,7 @@
     <% @programs.each do |program|%>
       <div class="p-title">
         <h1 class="program-title">
-          <%= program.title %>
+          <%= link_to program.title, program_path(program.id), method: :get %>
           (<%= program.date %>)
         </h1>
       </div>
