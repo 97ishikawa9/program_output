@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2021_02_27_131110) do
     t.string "title", null: false
     t.text "fact", null: false
     t.text "feeling", null: false
+    t.string "summary", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

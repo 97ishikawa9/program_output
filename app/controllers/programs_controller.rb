@@ -26,6 +26,6 @@ class ProgramsController < ApplicationController
 
 private
   def program_params
-    params.require(:programs_tag_relation).permit(:date, :title, :fact, :feeling, :name)
+    params.require(:programs_tag_relation).permit(:date, :title, :summary, :fact, :feeling, :name)
   end
 end
