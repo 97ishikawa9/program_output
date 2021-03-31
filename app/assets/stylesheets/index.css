@@ -19,10 +19,14 @@
 }
 
 .title{
-  font-size: 55px;
+  font-size: 50px;
   font-weight: bold;
-  color: white;
   margin-left: 50px;
+}
+
+.title a{
+  text-decoration: none;
+  color: white;
 }
 
 .new-post{
@@ -60,6 +64,11 @@
 .program_title{
   width: 100%;
   border-bottom:#666 1px solid;
+}
+
+.title-link{
+  text-decoration: none;
+  color: black;
 }
 
 .text{
