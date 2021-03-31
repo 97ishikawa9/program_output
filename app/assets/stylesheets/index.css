@@ -66,6 +66,11 @@
   border-bottom:#666 1px solid;
 }
 
+.title-link{
+  text-decoration: none;
+  color: black;
+}
+
 .text{
   height: 60%;
   font-size: 20px;
