@@ -24,7 +24,7 @@ https://gyazo.com/f8bc4e4e90e12ce69e47ac8f395191df
 https://gyazo.com/b3cda8cbb9d7c97f37cc5370d90601ae
 
 ・番組名をクリックすると、詳細ページに移動する
-
+https://gyazo.com/15e5eec7dc296e2fa5a2d6151043c76c
 
 # 実装予定の内容
 今後は表示される内容をシンプルにしたい。
